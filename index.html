@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starter template - Axentix</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/axentix@1.3.0/dist/css/axentix.min.css" />
+    
+</head>
+
+<body class="layout">
+<header>
+    <nav class="navbar shadow-1 primary mt-2">
+        <button class="btn rounded-1 white hide-md-up sidenav-trigger small mr-2" data-target="main-sidenav">
+            Menu
+        </button>
+        <a href="#" target="_blank" class="navbar-brand"><img class="txt-center" src="https://img.lovepik.com/free_png/28/80/42/70358PIC5yfJ6R8ust1V9_PIC2018.png_860.png" alt="" width="8%"></a>
+        <div class="navbar-menu ml-auto">
+            <a class="navbar-link active hide-sm-down" href="#">Link 1</a>
+            <a class="navbar-link hide-sm-down" href="#">Link 2</a>
+            <a class="navbar-link hide-sm-down" href="#">Link 3</a>
+            <div id="navbar-dropdown" data-ax="dropdown" class="dropdown" data-dropdown-prevent-viewport="true">
+                <a class="navbar-link dropdown-trigger" href="#">Dropdown</a>
+                <div class="dropdown-content white shadow-1 right-aligned">
+                    <a class="dropdown-item" href="#">Item 1</a>
+                    <a class="dropdown-item" href="#">Item 2</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="sidenav white shadow-1" id="main-sidenav" data-ax="sidenav">
+    <div class="sidenav-header">
+        <img src="https://useaxentix.com/img/axentix.svg" alt="" class="sidenav-logo" />
+    </div>
+
+    <a href="#" class="sidenav-link active">Link 1</a>
+    <a href="#" class="sidenav-link">Link 2</a>
+    <a href="#" class="sidenav-link">Link 3</a>
+</div>
+
+<main>
+    <div class="modal shadow-1 white falling" id="modal-example" data-ax="modal">
+        <div class="modal-header">Header</div>
+      
+        <div class="divider"></div>
+      
+        <div class="modal-content">
+          
+            <form id="ajouter-article-form">
+                <div class="form-field">
+                  <label>Nom articles</label>
+                  <input class="form-control" type="text" name="title">
+                </div>
+          
+                <div class="form-field">
+                  <label>Description articles</label>
+                  <input class="form-control" type="text" name="articleDescription">
+                </div>
+          
+                <div class="form-field">
+                  <label>Prix articles</label>
+                  <input class="form-control" type="text" name="articlePrix">
+                </div>
+          
+                <div class="form-field">
+                  <label>Image  articles</label>
+                 <!-- <input type="file" id="fileUpload" name="articleImage"/>-->
+                  <input class="form-control" type="text" name="articleImage">
+                </div>
+          
+                <div class="form-field txt-center">
+                    <button class="btn shadow-1 rounded-1 outline opening txt-blue " type="submit"><span class="outline-text">Valider</span></button>
+                 <!--<input class="btn btn-outline-info" value="Ajouterarticle" type="submit">--> 
+                </div>
+              </form>
+              
+        </div>
+      
+        <div class="divider"></div>
+      
+        <div class="modal-footer">
+          <button data-target="modal-example" class="ml-auto btn shadow-1 rounded-1 small primary modal-trigger">Close</button>
+        </div>
+      </div>
+      
+      <div id="updateForm"></div>
+    
+     <div class="container-field"> 
+<div id="article"class="grix xs4 md4 row-sm-3 ">
+    
+</div>
+</div>
+<div class="btn-group"></div>
+<div class=" container grix xs4 md3 slideInDown" id="detailsarticle">
+
+
+    
+</div>
+</main>
+
+
+<!-- Axentix JS minified version -->
+
+<script src="https://cdn.jsdelivr.net/npm/axentix@1.3.0/dist/js/axentix.min.js"></script>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+
+</body>
+</html>
